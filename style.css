@@ -1,5 +1,76 @@
+@font-face {
+    font-family: Norse;
+    src: url(norseFont/Norsebold.otf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #0F172A;
+}
+.image{
+    min-height: 100vh;
+    width: 35%;
+    position: relative;
+}
+.image > img:first-child{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image > img:nth-child(2){
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+}
+.image p{
+    position: absolute;
+    left: 100px;
+    color: white;
+    font-family: Norse;
+}
+.image p:nth-of-type(1){
+    top: 35px;
+    font-size: 40px;
+}
+.image p:nth-of-type(2){
+    top: 75px;
+    font-size: 20px;
+}
+.formSection{
+    min-height: 100vh;
+    width: 65%;
+    background-color: black;    
+    display: flex;
+    flex-direction: column;
+}
+.message{
+    height: 30%;
+    width: 100%;
+    font-family: Norse;
+    font-size: x-large;
+    padding: 10px 100px 40px 40px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 20px;
+}
+.form{
+    height: 40%;
+    width: 100%;
+    background-color: white;
+}
+.submitSection{
+    height: 30%;
+    width: 100%;
+    background-color: red;
 }
