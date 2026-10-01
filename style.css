@@ -11,7 +11,7 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    background-color: #0F172A;
+    background-color: #0B1120;
 }
 .image{
     min-height: 100vh;
@@ -57,7 +57,8 @@
     font-family: Norse;
     font-size: x-large;
     padding: 10px 100px 40px 40px;
-    background-color: aqua;
+    background-color: #475569;
+    color: #E2E8F0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -67,10 +68,67 @@
 .form{
     height: 40%;
     width: 100%;
-    background-color: white;
+    background-color: #D5DCE8;
+    display: flex;
+    flex-direction: column;
 }
-.submitSection{
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 60px;
+    width: 100%;
+    padding: 20px 30px;
+}
+form h2 {
+    grid-column: 1 / -1;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input{
+    width: 250px;
+    height: 38px;
+    padding: 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+input:user-invalid{
+    border: 1px solid red;
+}
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
+}
+
+.submitSection {
     height: 30%;
     width: 100%;
-    background-color: red;
+    background-color: #0F172A;
+    color: #E2E8F0;
+}
+button {
+    margin: 20px 30px;
+    padding: 12px 50px;
+    background-color: #536987;
+    color: #F1F5F9;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6B7F9F;
+}
+.submitSection p {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.submitSection span {
+    color: #C9A86A;
+    cursor: pointer;
+    margin-left: 5px;
 }
