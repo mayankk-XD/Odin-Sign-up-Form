@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box ;
+    box-sizing: border-box;
 }
 .main {
     width: 100%;
@@ -97,8 +97,9 @@ input:user-invalid{
     border: 1px solid red;
 }
 input:focus{
-    border: 1px solid blue;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.2);
+    outline: none;
+    border: 1px solid #536987;
+    box-shadow: 0 0 5px rgba(83, 105, 135, 0.4);
 }
 
 .submitSection {

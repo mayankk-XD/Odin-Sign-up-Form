@@ -14,54 +14,58 @@
             <p>ASGARD</p>
             <p>ENTER THE REALM</p>
         </div>
+
         <div class="formSection">
             <div class="message">
                 <P>This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
                 Sign up <em>now</em> to get started.</P>
-                <p>You <em>know</em> you want to.</P>
+                <p>You <em>know</em> you want to.</p>
             </div>
+
             <div class="form">
-                <form action="#" method="post">
+                <form action="#" method="post" id="signupForm">
                     <h2>Less gooo!!!</h2>
+
                     <div>
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" id="firstName" required>
                     </div>
 
                     <div>
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" required>
                     </div>
 
                     <div>
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                     <div>
                         <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                        <input type="tel" name="phoneNumber" id="phoneNumber" required>
                     </div>
 
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
 
                     <div>
                         <label for="cnfPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="cnfPassword" id="cnfPassword">
+                        <input type="password" name="cnfPassword" id="cnfPassword" required>
                     </div>
                 </form>
             </div>
+
             <div class="submitSection">
-                <button>Submit</button>
+                <button type="submit" form="signupForm">Submit</button>
                 <p>Already have an account ?<span>Log in</span></p>
             </div>
         </div>
     </div>
-    
-    <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
